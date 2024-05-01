@@ -1,0 +1,154 @@
+/* Dashboard.module.css */
+
+.dashboard {
+  display: flex;
+  justify-content: flex-start; /* Adjust content alignment */
+  padding: 20px;
+  color: white;
+}
+
+.content {
+  flex: 1; 
+  margin-left: 16%;
+}
+
+.mainContent {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.courseBox {
+  flex-basis: calc(50% - 10px); /* Two courses per row with spacing */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .courseBox {
+    flex-basis: calc(100% - 10px); /* One course per row on smaller screens */
+  }
+}
+
+.courseBox h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.courseBox p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.deleteButton {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #e05252;
+}
+
+.courseList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+
+.courseDetailsContainer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.courseDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.courseDetailsHeader h2 {
+  font-size: 24px;
+}
+
+.studentTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.studentTable th,
+.studentTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.studentTable th {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.studentActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.studentActions button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.studentActions button:hover {
+  background-color: #0056b3;
+}
+
+.attendanceCheckbox {
+  margin: 0;
+}
+
+/* Responsive Layout for Student Table */
+@media (max-width: 768px) {
+  .studentTable th,
+  .studentTable td {
+    font-size: 14px;
+  }
+}
+
+.b1 {
+  display: flex;
+  align-items:flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
